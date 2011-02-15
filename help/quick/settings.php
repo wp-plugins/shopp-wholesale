@@ -1,0 +1,1 @@
+<p class="sws-quick-help">Use this page to modify the general behaviour of the Wholesale system.</p>

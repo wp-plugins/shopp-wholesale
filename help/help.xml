@@ -1,0 +1,14 @@
+<?xml version='1.0' standalone='yes'?>
+<helpset>
+	
+	<fields>
+		<help key='customer-permission-system'><![CDATA[Check for wholesale customers using either the Wordpress role system, or the Shopp customer type field.]]></help>
+		<help key='wholesale-price-prefix'><![CDATA[Text to be displayed just before a wholesale price.]]></help>
+		<help key='wholesale-price-suffix'><![CDATA[Text to be displayed just after a wholesale price.]]></help>
+	</fields>
+	
+	<sections>
+	</sections>
+	
+</helpset>
+	

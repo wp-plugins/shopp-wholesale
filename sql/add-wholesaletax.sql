@@ -1,0 +1,1 @@
+alter table {prefix}shopp_price add wholesaletax enum('on','off')
