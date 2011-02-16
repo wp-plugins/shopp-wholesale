@@ -79,9 +79,12 @@ class ShoppWholesale implements IInitializable {
 	private function checkActivationErrors() {
 		if ('error_scrape' == $_GET['action']) {
 			$error = get_option(ShoppWholesale::ACTIVATION_ERROR);
-			deactivate_plugins(plugin_basename(SWS_PLUGIN_FILE));
+			echo "<div id='message' class='error'><p>$error</p></div>";
+			if (function_exists('deactivate_plugins')) {
+				deactivate_plugins(plugin_basename(SWS_PLUGIN_FILE));
+			}
 		  delete_option(ShoppWholesale::ACTIVATION_ERROR);
-		  die("<div id='message' class='error'><p>$error</p></div>");
+		  exit();
 		}
 	}
 
