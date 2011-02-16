@@ -3,7 +3,7 @@
 Plugin Name: Shopp Wholesale
 Description: Comprehensive Wholesale System for Shopp.
 Author: Tyson LT
-Version: 1.0
+Version: 0.7
 */
 
 define('SWS_DEBUG', true);
