@@ -27,7 +27,7 @@
 	<?php $total_qty = 0; ?>
 	<br/>
 	<h3>Backorder Items</h3>
-	<p>The following items are not currently in stock and can be placed on backorder.</p>
+	<p>The following items are not currently in stock<!-- and can be placed on backorder-->:</p>
 	<table>
 		<tr><th>Quantity</th> <th>Product</th> <th>Variation</th> <th>Unit Price</th> <th>Unit Tax</th> <th>Total</th> </tr>
 		<?php foreach($backorder_list as $item): ?>
@@ -44,7 +44,7 @@
 		<?php endforeach; ?>
 		<tr><th><?php echo $total_qty; ?></th><td colspan='4'>&nbsp;</td><th><?php echo money($total_price); ?></th></tr>
 	</table>
-	<p><input type='checkbox' name='backorder' id='backorder'/><label for='backorder'><b>Yes, please place these items on backorder.</b></label></p>
+	<!-- <p><input type='checkbox' name='backorder' id='backorder'/><label for='backorder'><b>Yes, please place these items on backorder.</b></label></p> -->
 <?php endif;?>
 
 <p><div align='right'><input type='button' value='Proceed to Checkout' onclick="document.location='<?php echo shoppurl(false, 'cart'); ?>';"/></div></p>
